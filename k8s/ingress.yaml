@@ -11,7 +11,7 @@ spec:
   ingressClassName: traefik
   tls:
     - hosts:
-        - internationalization.catshoulder.dev
+        - i18n.catshoulder.dev
       secretName: i18n-tls-v2
   rules:
     - host: i18n.catshoulder.dev
