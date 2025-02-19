@@ -56,14 +56,14 @@ Scalable & Efficient Translation management
 > Also known as **i18n**
 
 Locale code is used to identify a specific language or region.
-Standardized locale codes are a combination of a language code and a country code.
+ISO standardized locale codes are a combination of a language code and a country code.
 
 **Examples:**
 
 - en-US (English, United States)
 - fr-FR (French, France)
-- es-ES (Spanish, Spain)
-- de-DE (German, Germany)
+- be-NL (Belgium, Netherlands)
+- be-FR (Belgium, France)
 
 So:
 
@@ -85,6 +85,41 @@ So:
 | **Example**  | Using placeholders for text ("Hello, {name}!")        | Replacing "Hello, {name}!" with "Hola, {name}!" for Spanish |
 
 ---
+
+# Decide on a locale
+> How to decide on a locale code
+
+<div class="text-yellow text-xl flex flex-col mt-10">
+  https://www.sample.nl/en
+</div>
+
+**Country code**: <span class="text-yellow">NL</span>
+
+**Language code**: <span class="text-yellow">??</span>
+
+<div class="ml-4 grid grid-cols-2 border-b-1 border-dashed border-gray-300 p-2 text-base"> 
+  <span class="text-gray-400">Query parameter: </span>
+  <span class="text-yellow">en</span>
+</div>
+<div class="ml-4 grid grid-cols-2 border-b-1 border-dashed border-gray-300 p-2 text-base"> 
+  <span class="text-gray-400">Cookie: </span>
+  <span class="text-yellow">en</span>
+</div>
+<div class="ml-4 grid grid-cols-2 border-b-1 border-dashed border-gray-300 p-2 text-base"> 
+  <span class="text-gray-400">Browser language: </span>
+  <span class="text-yellow">nl</span>
+</div>
+<div class="ml-4 grid grid-cols-2 border-b-1 border-dashed border-gray-300 p-2 text-base"> 
+  <span class="text-gray-400">TLD supported languages: </span>
+  <span class="text-yellow">[nl, en]</span>
+</div>
+<div class="ml-4 grid grid-cols-2 p-2 text-base"> 
+  <span class="text-gray-400">Fallback after all: </span>
+  <span class="text-yellow">en</span>
+</div>
+
+---
+
 
 # Wider view
 
@@ -137,7 +172,7 @@ B --> D[./locales/fr.json]
 
 <div class="flex gap-2 text-sm items-center bg-gray-900 p-2 border-l-4 border-solid border-gray-300 rounded">
    <img class="w-6" src="https://em-content.zobj.net/source/microsoft-teams/363/winking-face_1f609.png" />
-    It has its advantages and disadvantages, and it is still a viable option for simple projects.
+    It has advantages as as well, and it is still a valuable option to have for simple projects.
 </div>
 
 ---
@@ -253,14 +288,18 @@ B --> D[./locales/fr.json]
 # Implementing a custom Solution
 
 <br/>
+
+<span class="text-yellow text-2xl font-bold"> We wanted to have:</span>
+
+
 <br/>
 
-- ✅ same DX as local development
-- ✅ full control over the translations
-- ✅ full control over the content workflows
-- ✅ seamless integration with Contentful
-- ✅ a self-hosted solution
-- ✅ migrations
+- ✅ Same DX as local development
+- ✅ Full control over the translations
+- ✅ Full control over the content workflows
+- ✅ Seamless integration with Contentful
+- ✅ A self-hosted solution
+- ✅ Migrations possibility
 
 ---
 
@@ -341,9 +380,19 @@ C(header.login.btn) --> |..Translates to..| D("Login")
 # Migrations
 
 
+
 <div class="mt-8 flex gap-2 text-sm items-center bg-gray-900 p-2 border-l-4 border-solid border-gray-300 rounded">
    <img class="w-6" src="https://em-content.zobj.net/source/microsoft-teams/363/partying-face_1f973.png" />
-    Contentful has also a <span v-mark.underline.orange>powerful API</span> SDK for developers allows having migrations
+    Contentful has also a <span v-mark.underline.orange>SDK API</span> for developers allows having migrations
+</div>
+
+<div class="flex align-center justify-center mt-12">
+
+- Contentful has environments so we created (dev, qual, master)
+- Mapped cms envs to git envs
+- We had migration setup for cms
+- Contents are live and editors can be editing them anytime.
+
 </div>
 
 <div v-click class="flex align-center justify-center mt-12">
