@@ -28,7 +28,7 @@ Scalable & Efficient Translation management
 
   <a class="text-left ml-4 mt-2" href="https://github.com/sayjeyhi">
     <strong class="text-xl">Jafar Rezaei</strong> <br/>
-    <span class="text-gray-400 text-sm">Feb 2024</span>
+    <span class="text-gray-400 text-sm">May 2025</span>
   </a>
 </div>
 
@@ -251,11 +251,15 @@ B --> D[./locales/fr.json]
 
 # Solutions
 
+<div class="ml-4">
+
 - tolgee
 - localizejs
 - lokalise
 - contentful
 - etc...
+
+</div>
 
 ---
 
@@ -321,7 +325,7 @@ B --> D[./locales/fr.json]
 
 ---
 
-# Setting Up Localization in Contentful
+# Localization in Contentful
 
 > For regular contents, Contentful provides a simple UI for managing content in multiple locales.
 
@@ -361,7 +365,8 @@ B --> D[./locales/fr.json]
 
 <br/>
 
-<span class="text-yellow text-2xl font-bold"> We wanted to have:</span>
+<div class="ml-4">
+<div class="text-yellow text-2xl font-bold mb-2"> We wanted to have:</div>
 
 
 <br/>
@@ -372,6 +377,8 @@ B --> D[./locales/fr.json]
 - ✅ Seamless integration with Contentful
 - ✅ A self-hosted solution
 - ✅ Migrations possibility
+
+</div>
 
 ---
 
@@ -483,10 +490,14 @@ A(local) --> | migration | B(dev) --> |migration| C(qual) --> |migration| D(mast
 
 # Keys on contentful
 
+<div class="ml-4 mt-12"> 
+
 - has special content models to store keys
 - supports types of keys
 - supports screenshots of the keys
 - allows adding descriptions
+
+</div>
 
 ---
 
@@ -510,11 +521,31 @@ as part of
 
 </span>
 
+
+<div v-click class=" flex gap-2 text-sm items-center bg-gray-900 p-2 border-l-4 border-solid border-gray-300 rounded">
+   <img class="w-6" src="https://em-content.zobj.net/source/microsoft-teams/363/partying-face_1f973.png" />
+    We will use these migrations to migrate <strong>Values</strong> as well
+</div>
+
 ---
 
 <div class="flex flex-col text-center center items-center justify-center h-full text-[20px]">
 
-Now we have keys on contentful, we need to have a way to translate them.
+- Now we have keys on our CMS 
+- Migrated with changed
+- We need to have a way to translate them.
+
+</div>
+
+---
+
+# Building a Custom Translation App
+
+What do we want to create?
+
+<div class="-mt-12 flex flex-col text-center center items-center justify-center h-full text-[28px]">
+
+A **UserInterface** to allow managing **Translation Values**.
 
 </div>
 
@@ -532,7 +563,6 @@ Now we have keys on contentful, we need to have a way to translate them.
 
 <br/>
 
-- Automate translations via migrations
 - Provide seamless UI for editors
 - Store translation history
 - Improve accuracy by validating translations
@@ -600,19 +630,6 @@ https://github.com/dotansimha/graphql-code-generator
 
 ---
 
-# Failure of APIs
-
-> We have back-up of translation automatically created from CMS
-
-<br/>
-<br/>
-<br/> 
-
-- From time to time we copy translation content from CMS to git
-- We can use these local files from the file-system if anything unexpected happens
-
----
-
 # Caching the translations
 
 > We use Redis to cache the translations
@@ -628,10 +645,29 @@ https://github.com/dotansimha/graphql-code-generator
 
 ---
 
+# Failure of APIs
+
+> We have back-up of translation automatically created from CMS
+
+<br/>
+<br/>
+<br/> 
+
+- From time to time we copy translation content from CMS to git
+- We can use these local files from the file-system if anything unexpected happens
+
+---
+
 <div class="flex align-center flex-col items-center mt-12">
 <img class="w-32 mb-12" src="https://em-content.zobj.net/source/microsoft-teams/363/cowboy-hat-face_1f920.png" />
 
 # Thank You!
+
+<span class="text-xs -mt-4">
+
+Slides: <a href="https://i18n.catshoulder.dev" class="text-blue-400">i18n.catshoulder.dev</a>
+
+</span>
 
 [GitHub](https://github.com/sayjeyhi) · [My Website](https://sayjeyhi.com)
 
