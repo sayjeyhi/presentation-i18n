@@ -34,6 +34,34 @@ Scalable & Efficient Translation management
 
 ---
 
+# WHO AM I?
+> Jafar Rezaei **@sayjeyhi**
+
+<iframe class="mt-2" style="transform: scale(0.5, 0.5) translate(-50%, -50%); position: absolute; left: 10%; right: 50%; " src="https://sayjeyhi.com?v=2" width="160%" height="140%" />
+
+---
+
+# What is Internationalization?
+
+<div class="flex items-center gap-4 justify-center mt-12">
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHVjOTFyZWNoZWY5NnRxN2JkNmpoOGpkNmxpNm1oNTRjOW51N3F4dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKTDn976rzVgky4/giphy.gif" />
+</div>
+
+---
+
+# What is Internationalization?
+
+<div class="flex items-center gap-4 justify-center mt-12">
+<ul class="text-left mr-12">
+<li>en.json</li>
+<li>fr.json</li>
+<li>[...].json</li>
+</ul>
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2J4N2xuZzljaHdva2E0cXdmeWQ3NWcwZWY1b29iM3BmMGd4bGUxeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VQ3ENfCBw7ljlvRo0u/giphy.gif" />
+</div>
+
+---
+
 # What is Internationalization?
 
 > Also known as **i18n**
@@ -53,29 +81,57 @@ Scalable & Efficient Translation management
 
 # Locales
 
-> Also known as **i18n**
+> en-GB, fr-FR
 
 Locale code is used to identify a specific language or region.
 ISO standardized locale codes are a combination of a language code and a country code.
 
+
+<div class="mt-12 grid grid-cols-2 border-t-1 border-dashed border-gray-500 p-t-2 text-base"> 
+<span>
+
+
 **Examples:**
 
-- en-US (English, United States)
-- fr-FR (French, France)
-- be-NL (Belgium, Netherlands)
-- be-FR (Belgium, France)
+- en-US <span class="text-gray-500">(English, United States)</span>
+- fr-FR <span class="text-gray-500">(French, France)</span>
+- be-NL <span class="text-gray-500">(Belgium, Netherlands)</span>
+- be-FR <span class="text-gray-500">(Belgium, France)</span>
 
-So:
 
-- {LANGUAGE_CODE}-{COUNTRY_CODE}
+</span>
+
+  <span>
+<img src="/locale.png" class="w-64"/>
+{LANGUAGE}-{COUNTRY}
+</span>
+</div>
+
 
 ---
 
-# Then what is Localization?!
+
+# Other definitions as well!?
+> G11N? L9N?
+
+<br/> 
+
+- Globalisation!
+- Localization!
+
+<div class="flex items-center gap-4 justify-center mt-8">
+<img class="w-96" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHl6cm41NXViN2c5c2Q2bDhrcGp0cnk1d2hwaHQwdTY1dHY0a3g5aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7vzGDZbRDSwS5axvZr/giphy.gif" />
+</div>
+
+---
+
+# What is Localization?!
 
 > Usually, localization is a process of adapting a product or service to a specific language or region.
 
 <br />
+
+<div class="scale-75">
 
 |              | **Internationalization (i18n)**                       | **Localization (l10n)**                                     |
 |--------------|-------------------------------------------------------|-------------------------------------------------------------|
@@ -83,6 +139,40 @@ So:
 | **Scope**    | Development phase (code-level implementation)         | Deployment phase (content and UI adaptation)                |
 | **Involves** | Code structure, UI flexibility, encoding              | Translation, cultural adaptation, formatting                |
 | **Example**  | Using placeholders for text ("Hello, {name}!")        | Replacing "Hello, {name}!" with "Hola, {name}!" for Spanish |
+
+</div>
+
+---
+
+
+<div class="flex items-center gap-4 justify-center mt-12">
+<img class="rounded-xl w-128" src="/What%20is%20Localization%20Image%201.jpeg" />
+</div>
+
+---
+
+
+# Wider view
+
+<div class="scale-95">
+
+- **Globalization (g11n)**: The process of extending the reach of an organization's products beyond a <span v-mark.underline.orange>specific region</span>, language or culture, to deliver those products to a wider market.
+- **Localization (l10n)**: adapting and customizing an internationalized product for <span v-mark.box.orange>one</span> or <span v-mark.box.orange>more target</span> markets. Localization takes into account language, culture, expectations, local standards and legal requirements, among other factors.
+
+<br/>
+
+- **Internationalization (i18n)**: accommodate different language conventions, date and time formats, and formatting instructions.
+- **Translation (t9n)**: translating all readable text into the language of the target audience. This includes UI components, product labels, and supporting documentation.
+
+</div>
+
+---
+
+# Let's make international project
+
+<div class="flex items-center gap-4 justify-center mt-12">
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXIydm1tajZhYzlxb25wa3kydmM3ejU1d3lsbTdpd3M0bXFsMjllMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8PnbQkG5uCl0s/giphy.gif" />
+</div>
 
 ---
 
@@ -120,24 +210,6 @@ So:
 
 ---
 
-
-# Wider view
-
-- **Globalization (g11n)**: The process of extending the reach of an organization's products <span v-mark="{ color: '#95a312', type: 'box' }">beyond</span> a <span v-mark.underline.orange>specific region</span>, language or culture, to deliver those products to a wider market.
-- **Localization (l10n)**: adapting and customizing an internationalized product for <span v-mark.box.orange>one</span> or <span v-mark.box.orange>more target</span> markets. Localization takes into account language, culture, expectations, local standards and legal requirements, among other factors.
-
-<br/>
-
-- **Internationalization (i18n)**: accommodate different <span v-mark="{ color: '#95a312', type: 'highlight' }">language conventions</span>, <span v-mark="{ color: '#95a312', type: 'highlight' }">date</span> and <span v-mark="{ color: '#95a312', type: 'highlight' }">time formats</span>, and formatting instructions.
-- **Translation (t9n)**: translating all readable text into the language of the target audience. This includes UI components, product labels, and supporting documentation.
-
-
----
-
-
-<img class="w-auto h-full rounded-xl" src="/What%20is%20Localization%20Image%201.jpeg" />
-
----
 
 # Simple i18n implementation
 
@@ -525,6 +597,19 @@ npx graphql-codegen
 https://github.com/dotansimha/graphql-code-generator
 </a>
 
+
+---
+
+# Failure of APIs
+
+> We have back-up of translation automatically created from CMS
+
+<br/>
+<br/>
+<br/> 
+
+- From time to time we copy translation content from CMS to git
+- We can use these local files from the file-system if anything unexpected happens
 
 ---
 
